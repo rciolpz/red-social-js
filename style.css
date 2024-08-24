@@ -1,0 +1,134 @@
+body {
+    background: linear-gradient(
+        90deg,
+        #581845 0%,
+        #900c3f 5%,
+        #c70039 10%,
+        #ff4733 40%,
+        #ff613d 55%,
+        #ffc300 80%
+    );
+    margin: 20px auto;
+    max-width: 50%;
+    text-align: center;
+}
+.comic-neue-regular {
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+h1 {
+    color: white;
+    text-shadow: 1px 1px 0px rgb(67, 1, 1);
+    font-size: 40px;
+}
+.logo {
+    position: fixed;
+    top: 25px;
+    left: 300px;
+    width: 60px;
+    height: 60px;
+    transition: opacity 0.3s ease;
+}
+.logo.hidden {
+    opacity: 0;
+}
+h2 {
+    text-shadow: 1px 1px 0px rgb(255, 137, 63);
+}
+button {
+    padding: 10px 12px;
+    margin: 5px 0px 20px 0px;
+    cursor: pointer;
+    background-color: rgb(251, 200, 133);
+    border: 1px solid rgb(67, 1, 1);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(67, 1, 1);
+    transition: all 0.5s ease;
+}
+button:hover {
+    background-color: rgb(245, 218, 182);
+}
+form {
+    margin-top: 20px;
+}
+label {
+    display: block;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 5px;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid rgb(67, 1, 1);
+    font-size: 20px;
+}
+.lab {
+    color: black;
+    text-shadow: 1px 1px 0px rgb(255, 137, 63);
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+.postItem {
+    background-color: #ffe22327;
+    margin: 12px 5px;
+    box-shadow: 0 1px 2px rgb(67, 1, 1);
+    border-radius: 10px;
+}
+.editForm {
+    padding: 10px;
+}
+p {
+    padding: 10px;
+    text-align: center;
+}
+.titlePost {
+    margin: 10px 12px;
+    display: inline-block;
+}
+@media only screen and (max-width: 1024px) {
+    .logo {
+        position: fixed;
+        top: 25px;
+        left: 170px;
+        width: 60px;
+        height: 60px;
+        transition: opacity 0.3s ease;
+    }
+    .logo.hidden {
+        opacity: 0;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .logo {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+        transition: opacity 0.3s ease;
+    }
+    .logo.hidden {
+        opacity: 0;
+    }
+}
+@media only screen and (max-width: 424px) {
+    input,
+    textarea {
+        width: 100%;
+        content: 40px;
+        padding: 5px;
+        margin-bottom: 5px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        border: 1px solid rgb(67, 1, 1);
+        font-size: 15px;
+    }
+}

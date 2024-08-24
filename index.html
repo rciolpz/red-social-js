@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Peach Net</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    </head>
+    <body class="comic-neue-regular">
+        <h1>
+            <img src="logo.png" alt="Logo" class="logo" />
+            Peach Net
+        </h1>
+        <h2>Make us a part of your story!</h2>
+        <form id="postForm" onsubmit=" event.preventDefault(); postData()">
+            <label class="lab" for="postTitle">Title:</label>
+            <input type="text" id="postTitle" required />
+            <label class="lab" for="postBody">Comment</label>
+            <textarea type="text" id="postBody" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <ul id="postList"></ul>
+
+        <script src="script.js"></script>
+    </body>
+</html>
